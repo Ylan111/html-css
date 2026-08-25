@@ -229,6 +229,9 @@ footer a {
 footer a:hover {
     color: var(--cor2);
 }
+footer strong{
+    color: rgba(52, 157, 42, 0.802);
+}
 
 div.video {
     background-color: var(--cor5);
