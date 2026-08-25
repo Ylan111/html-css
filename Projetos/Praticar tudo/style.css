@@ -53,10 +53,11 @@ main{
 }
 
 main > p {
-    font-family: var(--font1);
+    font-family: var(--fonte-padrão);
     color: white;
     text-indent: 10px;
     text-align: justify;
+    hyphens: auto;
     padding-bottom: 10px;
 
 }
