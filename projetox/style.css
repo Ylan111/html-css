@@ -1,0 +1,65 @@
+@charset "UTF-8";
+
+*{
+    padding: 0px;
+    margin: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+:root {
+  --fundo-principal: #12121a;   /* quase preto, base */
+  --fundo-secundario: #1e1e2e;  /* cards, seções */
+  --destaque-neon: #ff2e63;     /* rosa neon — botões, títulos */
+  --destaque-secundario: #08d9d6; /* ciano — hover, links */
+  --texto-claro: #eaeaea;
+  --texto-suave: #a0a0b0;       /* parágrafos, texto secundário */
+}
+
+body{
+    background-color: var(--fundo-principal);
+}
+
+header{
+    background-color: var(--destaque-neon);
+    text-align: center;
+    padding: 10px;
+}
+
+main{
+    background-color: var(--fundo-secundario);
+    padding: 10px;
+    margin: 10px;
+}
+main>p, article>p{
+    color: var(--texto-suave);
+    
+}
+
+main> h2, h3{
+    padding: 10px;
+    margin: 4px;
+    background-image: linear-gradient(to right, #eaeaea, transparent);
+    border-radius: 10px;
+}
+main>p{
+    padding: 10px;
+    margin: 10px;
+}
+section{
+    padding: 10px;
+    margin: 10px;
+}
+section>h2{
+    background-color: var(--destaque-neon);
+    padding: 10px;
+    border-radius: 10px 10px 0px 0px;
+
+}
+ section>p{
+    background-color: var(--fundo-principal);
+    color: var(--texto-claro);
+    padding: 10px;
+
+ }
+section> P:hover{
+    color: var(--destaque-secundario); 
+ }

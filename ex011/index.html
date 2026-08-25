@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multiplas imagens</title>
+</head>
+<style>
+    li{
+        color: azure;
+    }
+    body{
+        background-color: rgb(0, 0, 0);
+    }
+    h1{
+        color:coral
+    }
+    p{
+        color: coral;
+    }
+</style>
+<body>
+    <h1>Imagens dinamicas</h1>
+    <p>
+        Tente abrir essas imagens em vários dispositivos diferentes ou simples aumente e diminua o tamanho do seu navegador
+    </p>
+
+    <picture>
+        <source media="(max-width: 750px)" srcset="imagens/fotoc-p.jpg" type="image/jpg">
+        <source media="(max-width:1050px)" srcset="imagens/fotoc-m.jpg" type="image/jpg">
+       <img src="imagens/fotoc-g.jpg" alt="Imagens flexível">
+    </picture>
+    <h1>Reproduzindo Áudio</h1>
+    <p>Vamos aprender a reproduzir áudio em HTML5</p>
+    <audio preload="metadata" controls>
+        <source src="midia/teste.mp3" type="audio/mp3">
+        <source src="midia/teste.ogg" type="audio/ogg">
+        <source src="midia/teste.wav" type="audio/wav">
+    </audio>
+    <p>Infelizmente seu navegador não consegue reproduzir áudio <a href="midia/teste.mp3">Clique aqui para abaixar o arquivo MP3</a></p>
+
+    <ul type="square">
+        <li><a href="../ex012/index.html" target="_blank">Proxima atividade</a></li>
+    </ul>
+</body>
+</html>

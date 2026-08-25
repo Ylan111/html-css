@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Página de treino HTML e CSS com imagens, vídeos e listas." />
+  <title>Treino</title>
+  <link rel="shortcut icon" href="Y.icon.ico" type="image/x-icon" />
+  <style>
+    body {
+      background-color: black;
+      color: rgb(11, 120, 1);
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      transition: background-color 0.5s ease, color 0.5s ease;
+    }
+    h1 {
+      color: rgb(11, 120, 1);
+    }
+    h2 {
+      text-align: center;
+      color: red;
+    }
+    p {
+      text-align: center;
+      color: green;
+    }
+    dl,
+    ol {
+      color: rgb(11, 120, 1);
+    }
+    img {
+      max-width: 100%;
+      height: auto;
+    }
+    video {
+      max-width: 100%;
+      height: auto;
+      display: block;
+      margin: 0 auto;
+    }
+    a {
+      text-decoration: none;
+      color: white;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+    /* Responsividade extra para listas */
+    ul,
+    ol {
+      padding-left: 20px;
+    }
+
+    /* Botão fixo para alternar modo */
+    #toggleThemeBtn {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background-color: rgb(11, 120, 1);
+      border: none;
+      color: white;
+      padding: 12px 20px;
+      border-radius: 25px;
+      cursor: pointer;
+      font-size: 16px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+      transition: background-color 0.3s ease;
+      z-index: 1000;
+    }
+    #toggleThemeBtn:hover {
+      background-color: rgb(0, 90, 0);
+    }
+
+    /* Estilos para modo claro */
+    body.light-mode {
+      background-color: white;
+      color: rgb(0, 90, 0);
+      transition: background-color 0.5s ease, color 0.5s ease;
+    }
+    body.light-mode h1,
+    body.light-mode dl,
+    body.light-mode ol {
+      color: rgb(0, 90, 0);
+    }
+    body.light-mode h2 {
+      color: red;
+    }
+    body.light-mode p {
+      color: green;
+    }
+    body.light-mode a {
+      color: rgb(0, 128, 0);
+    }
+    body.light-mode a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+  <h1>Treino HTML E CSS <img src="image.png" alt="image.png" width="25" /></h1>
+
+  <h2>Treino de imagem</h2>
+  <hr />
+  <p>
+    <img src="imagens/mapa03.png" alt="mapa03" />
+    <img src="imagens/mapa07.png" alt="mapa07" />
+    <img src="imagens/mapa05.png" alt="mapa05" />
+  </p>
+  <p>
+    <img src="imagens/mapa09.png" alt="mapa09" />
+    <img src="imagens/mapa01.png" alt="mapa01" />
+    <img src="imagens/mapa08.png" alt="mapa08" />
+  </p>
+  <p>
+    <img src="imagens/mapa06.png" alt="mapa06" />
+    <img src="imagens/mapa02.png" alt="mapa02" />
+    <img src="imagens/mapa04.png" alt="mapa04" />
+  </p>
+  <hr />
+  <h1>Treino de video</h1>
+  <video
+    controls
+    controlslist="nodownload"
+    poster="imagens/pexels-szymon-shields-1503561-6152805.jpg"
+  >
+    <source src="media/teste-mp.mp4" type="video/mp4" />
+    <source src="media/meu-mkv.mkv" type="video/x-matroska" />
+    <source src="media/Teste-webm.webm" type="video/webm" />
+  </video>
+
+  <h1>Adicionando listas </h1>
+  <ol>
+    <li>
+      Fruta
+      <ul type="square">
+        <li>Banana</li>
+        <li>Maçã</li>
+        <li>Pera</li>
+        <li>Uva</li>
+      </ul>
+    </li>
+    <li>Arroz</li>
+    <li>Feijão</li>
+  </ol>
+  <ul style="color: rgb(11, 150, 1)">
+    <li>
+      <a href="../ex010/index.html" target="_blank">Ir para a principal</a>
+    </li>
+  </ul>
+  <h1>Usando as tag DD e DT</h1>
+
+  <dl>
+    <dt>HTML</dt>
+    <dd>HyperText Markup Language</dd>
+
+    <dt>Car</dt>
+    <dd>carro</dd>
+  </dl>
+
+  <button id="toggleThemeBtn">Alternar modo claro/escuro</button>
+
+  <script>
+    const btn = document.getElementById("toggleThemeBtn");
+    btn.addEventListener("click", () => {
+      document.body.classList.toggle("light-mode");
+
+      if (document.body.classList.contains("light-mode")) {
+        btn.textContent = "Alternar para modo escuro";
+      } else {
+        btn.textContent = "Alternar para modo claro";
+      }
+    });
+  </script>
+
+  <h1>Videos legais para assistir</h1>
+ <P>
+<a href="pag03.html"><img src="imagens/thumb-html.png" alt="HTML"></a> 
+  
+<a href="pág01.html"><img src="imagens/thumb-js.png" alt="JavaScript"></a>
+
+</P>
+
+  <p>
+   <a href="pag02.html"><img src="imagens/thumb-hardware.png" alt="image/png"></a>
+    
+   <a href="Pag04.html"> <img src="imagens/thumb-python.png" alt="image/png"></a>
+  </p>
+
+  <p>
+    <a href="../ex010/index.html">
+  <img src="imagens/voltar.png" alt="image/png"></a>
+  </p>
+</body>
+</html>

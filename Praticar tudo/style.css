@@ -1,0 +1,153 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap');
+
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --cor-primaria: #4D2828;
+    /* vinho escuro - títulos */
+    --cor-secundaria: #946767;
+    /* já usada - botões/detalhes */
+    --cor-fundo: #FBF5EF;
+    /* bege bem clarinho - fundo */
+    --cor-texto: #2E1E1E;
+    /* marrom quase preto - texto */
+    --cor-destaque: #C08552;
+
+    --font1: 'Source Code Pro', cursive;
+    --fonte-padrão: Arial, Verdana, Helvetica, sans-serif;
+    --fonte-destaque: "Bebas Neue"
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-image: linear-gradient(to bottom, var(--cor-secundaria), var(--cor-texto));
+    margin: 0;
+}
+
+header {
+    background-image: linear-gradient(to bottom, var(--cor-primaria), var(--cor-secundaria));
+    padding: 10px;
+    text-align: center;
+    font-family: var(--fonte-destaque);
+    color: goldenrod;
+}
+
+main{
+    background-image: none ;
+    width: 100%;
+    min-width: 300px;
+    max-width: 1000px;
+    padding: 20px;
+    margin: auto;
+    margin-bottom: 30px;
+    overflow: hidden;
+}
+
+main > p {
+    font-family: var(--font1);
+    color: white;
+    text-indent: 10px;
+    text-align: justify;
+    padding-bottom: 10px;
+
+}
+
+main > img {
+    width: 100%;
+    max-width: 700px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    border-radius: 10px;
+    box-shadow: 1px 1px 0px 2px #55013d92;
+}
+
+main > h2 {
+    font-family: var(--fonte-destaque);
+    text-indent: 1em;
+    padding: 7px;
+    margin: 24px 10px 10px 10px; /* mais espaço em cima, mesmo resto */
+    color: rgba(0, 0, 0, 0.748);
+    background-image: linear-gradient(to right, #ffffff50, transparent);
+}
+
+main > h2:first-of-type {
+    margin-top: 10px; 
+}
+aside > h2 {
+    background-color: #e0be74;
+    color: #23006ecf;
+    padding: 10px;
+    margin: -10px -10px 10px -10px;
+    border-radius: 10px 10px 0px 0px;
+
+
+}
+
+#catalogo{
+    padding: 10px;
+    border-radius: 10px;
+    background-color: white;
+    list-style: inside;
+    font-family: var(--fonte-destaque);
+}
+
+a{
+    display: inline-block;
+    color: #000000;
+    padding: 10px;
+    text-decoration: none;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    border-radius: 8px;
+}
+
+#botao {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #000000;
+    color: #f8f8f8;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+
+}
+
+footer {
+    background-color: #4B2D2D;
+    color: #F1E4D0;
+    text-align: center;
+    padding: 20px;
+}
+
+footer > p > a{
+    color: white;
+}
+
+footer hr {
+    width: 150px;
+    margin: 12px auto;
+    border: none;
+    border-top: 1px solid #e0be74;
+}
+
+#area-contato {
+    color: black;
+    padding: 10px;
+    margin-top: 10px;
+    margin-left:-20px ;
+    margin-right: -20px;
+    margin-bottom: -20px;
+    background-color: var(--cor-fundo);
+    border-radius: 10px 10px 0px 0px;
+    text-align: center;
+
+}

@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grouping Tags</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            color: rgb(255, 255, 255);
+            margin: 0;
+            background-color: blue;
+        }
+
+        header {
+            background-color: rgb(247, 247, 247);
+            color: black;
+            padding: 10px;
+            margin: 10px;
+            border-radius: 5px;
+        }
+
+        nav {
+            background-color: rgb(147, 145, 145);
+            padding: 5px;
+            margin: 10px;
+            box-shadow: 1px 1px 2px black;
+        }
+
+        main {
+            background-color: white;
+            padding: 10px;
+            margin: 10px;
+            border-radius: 10px 0px;
+        }
+
+        nav>a {
+            text-decoration: none;
+            color: rgb(43, 41, 41);
+            font-weight: bold;
+            margin-right: 10px;
+            padding: 5px;
+        }
+
+        nav>a:hover {
+            text-decoration: underline;
+        }
+
+        article {
+            background-color: white;
+            padding: 1px;
+        }
+
+        section {
+            background-color: rgb(151, 146, 146);
+            padding: 10px;
+            margin: 10px;
+            box-shadow: 1px 1px 4px black;
+        }
+
+        aside {
+            color: black;
+            background-color: snow;
+            padding: 10px;
+            text-align: center;
+        }
+
+        #rodape {
+            background-color: black;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            border-radius: 5px;
+        }
+
+        #rodape hr {
+            border-color: white;
+            width: 80%;
+        }
+
+        #futebol {
+            box-shadow: 1px 2px 4px black;
+        }
+
+        #noticia {
+            box-shadow: 1px 2px 4px black;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Meu site</h1>
+        <nav>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+        </nav>
+    </header>
+
+    <main>
+        <article id="esporte">
+            <section id="futebol">
+                <h2>Tudo sobre futebol</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint ipsam deleniti dolore. Aut repudiandae,
+                    eius illum quasi voluptatem rem quod facere aspernatur commodi, quia veritatis nihil vitae a quidem.
+                    Harum.</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati, natus quae similique eligendi sit
+                    earum itaque porro dolorem ea ab, culpa ipsa nobis totam, exercitationem amet consequuntur non
+                    consequatur sunt?</p>
+                <aside>Artigo escrito por Ylan Carreiro Clemente</aside>
+            </section>
+    </main>
+    <main>
+        <section id="noticia">
+            <h2>Tudo que aconteceu recentemente no futebol</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione quae ea libero quos, voluptate, sunt
+                neque repellendus rem fugit quam nesciunt! Perspiciatis rem voluptates labore debitis modi eos vel esse.
+            </p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In commodi officiis consectetur! Aliquid animi
+                optio nostrum dolores laboriosam aliquam deleniti! Quas dignissimos odit culpa qui, numquam minus
+                possimus illum assumenda?</p>
+            <aside>Artigo escrito pelo Portal Leo Dias</aside>
+        </section>
+    </main>
+
+
+    <footer id="rodape">
+        <hr>
+        <p>Desenvolvido por Ylan Carreiro Clemente</p>
+        <hr>
+    </footer>
+</body>
+
+</html>

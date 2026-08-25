@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sua Nacionalidade</title>
+    <style>
+        body{
+            font:normal 17pt Arial;
+            background-image: linear-gradient(to left, rgb(187, 184, 184), gray);
+            margin: 0;
+            padding: 0;
+            text-align: center;
+            
+        }
+        input{
+            font: normal 17pt Arial;
+            width: 100px;
+
+        }
+        div{
+            margin-top: 20px;
+        }
+        input{
+            background-color: black;
+            color: white
+        }
+        main{ 
+           box-shadow: 0px 8px 20px rgba(255, 255, 255, 0.25);
+           width: 600px;
+           margin: auto;
+           border-radius: 10px;
+           padding: 10px;
+
+        }
+        div{
+            color: seashell;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <h1>Analisando Nacionalidade</h1>
+        <input type="text" name="txtpais" id="txtpais">
+        <input type="button" value="verificar" onclick="verificar()">
+        <div id="res">Resultado...</div>
+        <script>
+            function verificar() {
+                var pais = document.getElementById('txtpais').value
+                var res = document.getElementById('res')
+                if (pais === 'Brasil') {
+                    res.innerHTML = `Você é <strong>Brasileiro</strong>!`
+                } else {
+                    res.innerHTML = `Você é <strong>Estrangeiro</strong>!`
+                }
+             }
+        </script>
+    </main>
+    <h1>Habilidade em produção</h1>
+</body>
+</html>

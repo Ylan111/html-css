@@ -1,0 +1,28 @@
+@charset "UTF-8";
+
+.caixa{
+    background-image: url(8be09f00-0c12-410d-bc10-29553793f54e.jpg);
+    background-color: lightblue;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border: 3px solid red;
+    padding: 10% 0% 10% 1%;
+
+}
+ body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        h1{
+            border-color: red;
+            background-color: lightblue;
+            height: 100%;
+            width: 100%;
+            border-style: solid;
+            text-align:center;
+        }
+        a{
+            border: 2px;
+            border-style: groove;
+            border-color: red;
+
+        }
