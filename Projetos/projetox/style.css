@@ -4,6 +4,7 @@
     padding: 0px;
     margin: 0px;
     font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
 }
 :root {
   --fundo-principal: #12121a;   /* quase preto, base */
@@ -15,11 +16,12 @@
 }
 
 body{
-    background-color: var(--fundo-principal);
+    background-color: var(--fundo-secundario);
+    margin: 0px;
 }
 
 header{
-    background-color: var(--destaque-neon);
+    background-image:linear-gradient( to left ,var(--destaque-neon), var(--destaque-secundario));
     text-align: center;
     padding: 10px;
 }
@@ -27,8 +29,12 @@ header{
 main{
     background-color: var(--fundo-secundario);
     padding: 10px;
-    margin: 10px;
+    margin: auto;
+    width: 100%;
+    max-width: 1000px;
+    min-width: 300px;
 }
+
 main>p, article>p{
     color: var(--texto-suave);
     
@@ -37,7 +43,7 @@ main>p, article>p{
 main> h2, h3{
     padding: 10px;
     margin: 4px;
-    background-image: linear-gradient(to right, #eaeaea, transparent);
+    background-image: linear-gradient(to right, var(--destaque-secundario), var(--texto-claro),transparent);
     border-radius: 10px;
 }
 main>p{
@@ -47,9 +53,10 @@ main>p{
 section{
     padding: 10px;
     margin: 10px;
+    display: inline-block;
 }
 section>h2{
-    background-color: var(--destaque-neon);
+    background-color: var(--texto-suave);
     padding: 10px;
     border-radius: 10px 10px 0px 0px;
 
@@ -61,5 +68,6 @@ section>h2{
 
  }
 section> P:hover{
-    color: var(--destaque-secundario); 
+    color: rgb(0, 0, 0),;
+    background-image: linear-gradient(to right, var(--destaque-secundario) , transparent);
  }
