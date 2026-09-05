@@ -1,11 +1,12 @@
 @charset "UTF-8";
 
-*{
+* {
     padding: 0px;
     margin: 0px;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Zen Kaku Gothic New', Arial, Helvetica, sans-serif;
     box-sizing: border-box;
 }
+
 :root {
   --fundo-principal: #12121a;   /* quase preto, base */
   --fundo-secundario: #1e1e2e;  /* cards, seções */
@@ -15,18 +16,24 @@
   --texto-suave: #a0a0b0;       /* parágrafos, texto secundário */
 }
 
-body{
+body {
     background-color: var(--fundo-secundario);
     margin: 0px;
 }
 
-header{
-    background-image:linear-gradient( to left ,var(--destaque-neon), var(--destaque-secundario));
+header {
+    background-image: linear-gradient(to left, var(--destaque-neon), var(--destaque-secundario));
     text-align: center;
     padding: 10px;
 }
 
-main{
+header h1 {
+    color: var(--texto-claro);
+    text-shadow: 0 0 8px var(--destaque-neon), 0 0 20px var(--destaque-neon);
+    letter-spacing: 1px;
+}
+
+main {
     background-color: var(--fundo-secundario);
     padding: 10px;
     margin: auto;
@@ -35,46 +42,186 @@ main{
     min-width: 300px;
 }
 
-main>p, article>p{
+main > p, article > p {
     color: var(--texto-suave);
-    
 }
 
-main> h2, h3{
+main > h2, h3 {
     padding: 10px;
     margin: 4px;
-    background-image: linear-gradient(to right, var(--destaque-secundario), var(--texto-claro),transparent);
+    background-image: linear-gradient(to right, var(--destaque-secundario), var(--texto-claro), transparent);
     border-radius: 10px;
 }
-main>p{
+
+main > p {
     padding: 10px;
     margin: 10px;
 }
-section{
+
+section {
     padding-left: 10px;
     display: inline-block;
     text-align: center;
-    padding-top: 10px; 
+    padding-top: 10px;
     padding-bottom: 10px;
 }
-section>h2{
+
+section > h2 {
     background-color: var(--texto-suave);
     padding: 10px;
-    border-radius: 10px 10px 0px 0px; 
+    border-radius: 10px 10px 0px 0px;
 }
- section>p{
+
+section > p {
     background-color: var(--fundo-principal);
     color: var(--texto-claro);
     padding: 10px;
     text-align: center;
 }
-section> P:hover{
-    color: rgb(0, 0, 0),;
-    background-image: linear-gradient(to right, var(--destaque-secundario) , transparent);
- }
- footer{
+
+section > p:hover {
+    color: rgb(0, 0, 0);
+    background-image: linear-gradient(to right, var(--destaque-secundario), transparent);
+}
+
+footer {
     background-color: var(--destaque-neon);
     border-radius: 0px;
     text-align: center;
     color: var(--texto-claro);
- }
+}
+
+
+#cardapio {
+    display: block;
+    width: 100%;
+    background-color: transparent;
+    padding: 10px;
+}
+
+#cardapio h2 {
+    display: block;
+    background-color: transparent;
+    background-image: linear-gradient(to right, var(--destaque-secundario), var(--texto-claro), transparent);
+}
+
+.grade-pratos {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 16px;
+    padding: 10px;
+}
+
+.card-prato {
+    display: block;
+    background-color: var(--fundo-principal);
+    border: 1px solid var(--texto-suave);
+    border-radius: 10px;
+    padding: 18px;
+    text-align: left;
+    text-decoration: none;
+    color: var(--texto-claro);
+    transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.card-prato:hover {
+    border-color: var(--destaque-secundario);
+    box-shadow: 0 0 14px rgba(8, 217, 214, 0.35);
+}
+
+.card-prato .nome-prato {
+    font-size: 1.15rem;
+    font-weight: bold;
+    color: var(--texto-claro);
+}
+
+.card-prato .preco-prato {
+    display: inline-block;
+    margin-top: 6px;
+    padding: 3px 10px;
+    border-radius: 999px;
+    background-color: var(--destaque-neon);
+    color: var(--texto-claro);
+    font-size: 0.9rem;
+}
+
+.card-prato .resumo-prato {
+    margin-top: 10px;
+    color: var(--texto-suave);
+    font-size: 0.9rem;
+    line-height: 1.4;
+}
+
+.hero-prato {
+    background-color: var(--fundo-principal);
+    text-align: center;
+    padding: 40px 20px;
+}
+
+.hero-prato h1 {
+    color: var(--texto-claro);
+    text-shadow: 0 0 8px var(--destaque-neon), 0 0 20px var(--destaque-neon);
+    font-size: 2.2rem;
+}
+
+.hero-prato .preco-destaque {
+    display: inline-block;
+    margin-top: 12px;
+    padding: 6px 18px;
+    border-radius: 999px;
+    background-color: var(--destaque-neon);
+    color: var(--texto-claro);
+    font-size: 1.1rem;
+}
+
+.detalhe-prato {
+    max-width: 700px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.detalhe-prato h2 {
+    color: var(--texto-claro);
+    background-image: linear-gradient(to right, var(--destaque-secundario), transparent);
+    padding: 8px 12px;
+    border-radius: 8px;
+    margin: 20px 0 10px 0;
+}
+
+.detalhe-prato p {
+    color: var(--texto-suave);
+    line-height: 1.6;
+    padding: 6px 10px;
+}
+
+.lista-ingredientes {
+    list-style: none;
+    padding: 10px;
+    color: var(--texto-suave);
+}
+
+.lista-ingredientes li {
+    padding: 6px 10px;
+    border-bottom: 1px solid var(--fundo-secundario);
+}
+
+.lista-ingredientes li::before {
+    content: "— ";
+    color: var(--destaque-secundario);
+}
+
+.link-voltar {
+    display: inline-block;
+    margin: 20px;
+    color: var(--destaque-secundario);
+    text-decoration: none;
+    border: 1px solid var(--destaque-secundario);
+    padding: 8px 16px;
+    border-radius: 6px;
+    transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.link-voltar:hover {
+    background-color: var(--destaque-secundario);
+    color: var(--fundo-principal);
+}
