@@ -54,21 +54,27 @@ section{
     padding-left: 10px;
     display: inline-block;
     text-align: center;
+    padding-top: 10px; 
+    padding-bottom: 10px;
 }
 section>h2{
     background-color: var(--texto-suave);
     padding: 10px;
-    border-radius: 10px 10px 0px 0px;
-
+    border-radius: 10px 10px 0px 0px; 
 }
  section>p{
     background-color: var(--fundo-principal);
     color: var(--texto-claro);
     padding: 10px;
     text-align: center;
-
- }
+}
 section> P:hover{
     color: rgb(0, 0, 0),;
     background-image: linear-gradient(to right, var(--destaque-secundario) , transparent);
+ }
+ footer{
+    background-color: var(--destaque-neon);
+    border-radius: 0px;
+    text-align: center;
+    color: var(--texto-claro);
  }
