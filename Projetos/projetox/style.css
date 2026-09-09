@@ -153,9 +153,18 @@ footer {
 }
 
 .hero-prato {
-    background-color: var(--fundo-principal);
+    width: 100%;
+    position: relative;
+    background-image: linear-gradient(
+            to bottom,
+            rgba(0, 0, 0, 0.4),
+            var(--fundo-principal)
+        ),
+        url('https://imgs.search.brave.com/pr15016gZ7ZsaorJOu1aexvng4M17yypAKMobseM3bg/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly9wcmV2/aWV3LnJlZGQuaXQv/Z3Rpd3VhZG4wdjNl/MS5qcGVnP3dpZHRo/PTY0MCZjcm9wPXNt/YXJ0JmF1dG89d2Vi/cCZzPTUzYWNlZDEy/NzdmOWM5NGRmOGZl/YjdlNjM1ODNjNGE3/MjE5M2I4ZmQ');
+    background-size: cover;
+    background-position: center;
+    padding: 4rem 2rem;
     text-align: center;
-    padding: 40px 20px;
 }
 
 .hero-prato h1 {
@@ -176,7 +185,7 @@ footer {
 
 .detalhe-prato {
     max-width: 700px;
-    margin: 0 auto;
+    margin: 0 auto; 
     padding: 20px;
 }
 
