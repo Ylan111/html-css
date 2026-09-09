@@ -28,13 +28,14 @@
 }
 
 body {
-    font-family: Arial, sans-serif;
-    background-image: linear-gradient(to bottom, var(--cor-secundaria), var(--cor-texto));
     margin: 0;
+    font-family: Arial, sans-serif;
+    background-image: url(wallpaper004.jpg)
+    
 }
 
 header {
-    background-image: linear-gradient(to bottom, var(--cor-primaria), var(--cor-secundaria));
+    background-color:black ;
     padding: 10px;
     text-align: center;
     font-family: var(--fonte-destaque);
@@ -42,7 +43,7 @@ header {
 }
 
 main{
-    background-image: none ;
+    background-image: url(wallpaper004.jpg) ;
     width: 100%;
     min-width: 300px;
     max-width: 1000px;
@@ -54,7 +55,7 @@ main{
 
 main > p {
     font-family: var(--fonte-padrão);
-    color: white;
+    color: rgb(0, 0, 0);
     text-indent: 10px;
     text-align: justify;
     hyphens: auto;
@@ -62,7 +63,8 @@ main > p {
 
 }
 
-main > img {
+
+div > img {
     width: 100%;
     max-width: 700px;
     height: auto;
@@ -115,7 +117,7 @@ a{
 #botao {
     display: inline-block;
     padding: 10px 20px;
-    background-color: #000000;
+    background-color: gray;
     color: #f8f8f8;
     text-decoration: none;
     transition: background-color 0.3s ease;
@@ -123,14 +125,14 @@ a{
 }
 
 footer {
-    background-color: #4B2D2D;
-    color: #F1E4D0;
+    background-color: #565555;
+    color: #100f0f;
     text-align: center;
     padding: 20px;
 }
 
 footer > p > a{
-    color: white;
+    color: rgb(0, 0, 0);
 }
 
 footer hr {
@@ -141,13 +143,13 @@ footer hr {
 }
 
 #area-contato {
-    color: black;
+    color: rgb(0, 0, 0);
     padding: 10px;
     margin-top: 10px;
     margin-left:-20px ;
     margin-right: -20px;
     margin-bottom: -20px;
-    background-color: var(--cor-fundo);
+    background-color:rgba(0, 0, 0, 0.535);
     border-radius: 10px 10px 0px 0px;
     text-align: center;
 
