@@ -1,31 +1,114 @@
 @charset "UTF-8";
 
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
 
 
 :root{
     --branco-neve: #f0f8ff;
     --azul-gelo: #a8d4e8;
     --azul-profundo: #2c4870;
+    --principal:"Playfair Display", serif;
 
     --areia-clara: #f4d19c;
 
 }
+*{
+    padding: 0;
+    margin: 0;
+}
 div.himalaia{
-    width: 300px;
-    height: 500px;
+    width: 100%;
+    max-width: 400px;
+    height: 400px; /* ou o valor que preferir */
     background-image: url(himalaia.jpeg);
     background-size: cover;
     background-position: center;
     border-radius: 10px;
+    margin: 0 auto; /* centraliza */
 }
+div#himalaia{
+    width: 200%;
+    max-width: 400px;
+    height: 200px;
+    background-image: url(image.png);
+    box-shadow: 0 2px 2px  rgba(0, 0, 0, 0.237);
+    background-size: cover;
+    background-position: center;
+    margin: 0 auto;
+    border-radius: 10px;
+}
+body.pagina-himalaia{
+    background: linear-gradient(to bottom,var(--branco-neve), var(--azul-gelo)) ;
+    font-family: var(--principal);
+    color: #1a1a2e;
+}
+header{
+     padding: 10px;
+    font-size: 1em;
+    text-shadow: 1px 1px 0px rgba(255, 255, 255, 0.411);
+    min-height: normal;
+    text-align: center; 
+    background-image:linear-gradient(to top, var(--azul-gelo), var(--azul-profundo));
+    color: black;
+    font-weight: bold;
+}
+main{
+    padding: 20px;
+    margin: auto;
+}
+main h2{
+    padding-left:6px ;
+    color: black;
+    margin: 10px;
+    border-radius: 10px;
+
+}
+main li {
+    color: black;
+    margin: 0;
+    font-weight: bold;
+    text-decoration: none;
+    padding-left: 5px;
+}
+main p{
+    padding: 5px;
+}
+
+aside{
+    background-color: var(--branco-neve);
+    padding: -10px 5px 5px 5px;
+    margin-top: 10px;
+    border-radius: 10px
+}
+aside h2{
+    background-image: linear-gradient(to top, var(--azul-profundo), var(--azul-gelo));
+    padding:10px;
+    text-align: center;
+    color: black;
+    text-shadow:1px 1px 1px rgba(255, 255, 255, 0.494)  ;
+    margin:auto;
+    border-radius: 10px 10px 0px 0px;
+}
+aside>ol {
+    list-style-position: inside;
+    color: black;
+    columns: 2;
+    padding: 5px;
+    margin: 5px;
+}
+aside li{
+    padding:4px;
+}
+
+
+/*--------Página Himalaia------------*/
 
 
 body.pagina-principal{
     background-image: linear-gradient(to top, green, rgb(255, 158, 3), rgba(0, 0, 0, 0.429));
 }
-body.pagina-himalaia{
-    background: linear-gradient(to bottom,var(--branco-neve), var(--azul-gelo)) ;
-}
+
+
 ul{
     list-style: none;
     padding-left: 0;
@@ -42,7 +125,7 @@ div.quadrado {
 }
 
 #q1 {
-    background: linear-gradient();
+    background: rgb(0,0,0);
 }
 #q2{
     background-color: rgb(0, 0, 0);
