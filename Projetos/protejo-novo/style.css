@@ -1,0 +1,55 @@
+@charset "UTF-8";
+
+
+
+:root{
+    --branco-neve: #f0f8ff;
+    --azul-gelo: #a8d4e8;
+    --azul-profundo: #2c4870;
+
+    --areia-clara: #f4d19c;
+
+}
+div.himalaia{
+    width: 300px;
+    height: 500px;
+    background-image: url(himalaia.jpeg);
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px;
+}
+}
+
+body.pagina-principal{
+    background-image: linear-gradient(to top, green, rgb(255, 158, 3), rgba(0, 0, 0, 0.429));
+}
+body.pagina-himalaia{
+    background: linear-gradient(to bottom,var(--branco-neve), var(--azul-gelo)) ;
+}
+ul{
+    list-style: none;
+    padding-left: 0;
+}
+
+div.quadrado {
+    height: 98vh;
+    border: 2px solid black;
+    width: 300px;
+    height: 300px;
+    border-radius: 10px;
+    display: inline-block;
+    background-color: lightgray;
+}
+
+#q1 {
+    background: linear-gradient();
+}
+#q2{
+    background-color: rgb(0, 0, 0);
+}
+#q3{
+    background-color: rgb(0, 0, 0);
+}
+#q4{
+    background-color: rgb(0, 0, 0);
+}
