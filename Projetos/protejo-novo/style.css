@@ -92,7 +92,7 @@ aside h2{
 aside>ol {
     list-style-position: inside;
     color: black;
-    columns: 3;
+    columns: 2;
     padding: 5px;
     margin: 5px;
 }
