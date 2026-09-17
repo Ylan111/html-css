@@ -19,23 +19,33 @@
 div.himalaia{
     width: 100%;
     max-width: 400px;
-    height: 400px; /* ou o valor que preferir */
+    height: 400px; 
+    overflow: hidden;
+    transition: transform 0.4s ease;
     background-image: url(himalaia.jpeg);
     background-size: cover;
     background-position: center;
     border-radius: 10px;
     margin: 0 auto; /* centraliza */
 }
+div.himalaia:hover{
+    transform: scale(1.05);
+}
 div#himalaia{
     width: 100%;
     max-width: 500px;
     height: 200px;
+    overflow: hidden;
+    transition: transform 0.4s ease;
     background-image: url(image.png);
     box-shadow: 0 2px 2px  rgba(0, 0, 0, 0.237);
     background-size: cover;
     background-position: center;
     margin: 0 auto;
     border-radius: 10px;
+}
+div#himalaia:hover{
+    transform: scale(1.05);
 }
 body.pagina-himalaia{
     background: linear-gradient(to bottom,var(--branco-neve), var(--azul-gelo)) ;
