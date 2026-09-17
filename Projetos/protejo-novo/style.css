@@ -48,7 +48,7 @@ header{
     text-shadow: 1px 1px 0px rgba(255, 255, 255, 0.411);
     min-height: normal;
     text-align: center; 
-    background-image:linear-gradient(to top, var(--azul-gelo), var(--azul-profundo));
+    background-image:linear-gradient(to left,transparent, rgba(0, 0, 0, 0.459), var(--azul-gelo));
     color: black;
     font-weight: bold;
 }
@@ -57,6 +57,7 @@ main{
     margin: auto;
 }
 main h2{
+    text-shadow: 0 1px 1px black;
     padding-left:6px ;
     color: black;
     margin: 10px;
@@ -64,19 +65,29 @@ main h2{
 
 }
 main li {
+    background-color: white;
     color: black;
-    margin: 0;
     font-weight: bold;
+    border-radius: 15px;
     text-decoration: none;
-    padding-left: 5px;
+    padding: 15px 20px;
+    margin-bottom: 15px;
+    box-shadow: 0 4px 10px black;
 }
+
+
 main p{
     padding: 5px;
+}
+ul:hover li {
+ background-color: black;
+ color:var(--branco-neve);
+ box-shadow: 0 5px 5px var(--azul-gelo);
+ transition: background-color 0.3s ease;
 }
 
 aside{
     background-color: var(--branco-neve);
-    padding: -10px 5px 5px 5px;
     margin-top: 10px;
     border-radius: 10px
 }
@@ -89,10 +100,15 @@ aside h2{
     margin:auto;
     border-radius: 10px 10px 0px 0px;
 }
+.curiosidades:hover li{
+    background-color: black;
+    color:var(--branco-neve);
+    transition: background-color 0.3s ease ;
+}
 aside>ol {
     list-style-position: inside;
     color: black;
-    columns: 2;
+    columns: 2 ;
     padding: 5px;
     margin: 5px;
 }
@@ -122,6 +138,12 @@ div.quadrado {
     border-radius: 10px;
     display: inline-block;
     background-color: lightgray;
+}
+
+.quadrado:hover {
+    transform: scale(1.05);
+    transition: 0.3s ease;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.3);
 }
 
 #q1 {
