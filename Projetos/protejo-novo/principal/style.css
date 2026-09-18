@@ -5,7 +5,7 @@
 
 :root{
     --branco-neve: #f0f8ff;
-    --azul-gelo: #a8d4e8;
+    --azul-gelo: #a8d4e8; 
     --azul-profundo: #2c4870;
     --principal:"Playfair Display", serif;
 
@@ -16,6 +16,7 @@
     padding: 0;
     margin: 0;
 }
+/*--------Página Himalaia------------*/
 div.himalaia{
     width: 100%;
     max-width: 400px;
@@ -127,11 +128,14 @@ aside li{
 }
 
 
-/*--------Página Himalaia------------*/
+    /*--------Página Principal----------*/
 
 
 body.pagina-principal{
-    background-image: linear-gradient(to top, green, rgb(255, 158, 3), rgba(0, 0, 0, 0.429));
+    background: radial-gradient(circle, 
+    #f0f8ff 0%,      
+    #4682b4 100%     
+);
 }
 
 
@@ -146,9 +150,26 @@ div.quadrado {
     width: 300px;
     height: 300px;
     border-radius: 10px;
-    display: inline-block;
+    display: inline-flex;
     background-color: lightgray;
+    align-items: center;
+    justify-content: center;
 }
+main {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap; 
+    gap: 20px; 
+}
+
+main a{
+    text-decoration:none ;
+    color: white;
+    font-variant: small-caps;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
 
 .quadrado:hover {
     transform: scale(1.05);
@@ -157,14 +178,32 @@ div.quadrado {
 }
 
 #q1 {
-    background: rgb(0,0,0);
+
+    margin: 10px;
+    text-align: center;
+    background-image: url(himalaia-img.jpg);
+    background-size: cover;
+    
 }
+
 #q2{
-    background-color: rgb(0, 0, 0);
+    margin: 10px;
+    text-align: center;
+    background-image: url(saara.jpg.jpg);
+    background-size:cover ;
 }
 #q3{
-    background-color: rgb(0, 0, 0);
+    background-color: rgb(6, 89, 0);
+    margin: 10px;
+    text-align: center;
+    background-image: url(../amazonia/amazonia.jpg);
+    background-size: cover;
+    
 }
 #q4{
-    background-color: rgb(0, 0, 0);
+    background-color: rgba(255, 235, 235, 0.582);
+    margin: 10px;
+    text-align: center;
+    background-image: url(../polar/polar.jpg);
+    background-size: cover;
 }
