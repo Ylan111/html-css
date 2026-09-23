@@ -19,13 +19,31 @@
     margin: 0;
 }
 /*--------Página Himalaia------------*/
+
+body.pagina-himalaia{
+    background: linear-gradient(to bottom,var(--branco-neve), var(--azul-gelo)) ;
+    font-family: var(--principal);
+    color: #1a1a2e;
+}
+
+header.pagina-himalaia{
+     padding: 10px;
+    font-size: 1em;
+    text-shadow: 1px 1px 0px rgba(255, 255, 255, 0.411);
+    min-height: normal;
+    text-align: center; 
+    background-image:linear-gradient(to left,transparent, rgba(0, 0, 0, 0.459), var(--azul-gelo));
+    color: black;
+    font-weight: bold;
+}
+
 div.himalaia{
     width: 100%;
     max-width: 400px;
     height: 400px; 
     overflow: hidden;
     transition: transform 0.4s ease;
-    background-image: url(himalaia.jpeg);
+    background-image: url(../himalaia/himalaia.jpeg);
     background-size: cover;
     background-position: center;
     border-radius: 10px;
@@ -40,20 +58,16 @@ div#himalaia{
     height: 200px;
     overflow: hidden;
     transition: transform 0.4s ease;
-    background-image: url(image.png);
+    background-image: url(../himalaia/image.png);
     box-shadow: 0 2px 2px  rgba(0, 0, 0, 0.237);
     background-size: cover;
     background-position: center;
     margin: 0 auto;
     border-radius: 10px;
 }
+
 div#himalaia:hover{
     transform: scale(1.05);
-}
-body.pagina-himalaia{
-    background: linear-gradient(to bottom,var(--branco-neve), var(--azul-gelo)) ;
-    font-family: var(--principal);
-    color: #1a1a2e;
 }
 
 main#pagina-himalaia{
@@ -90,26 +104,31 @@ ul.pagina-himalaia:hover li {
  transition: background-color 0.3s ease;
 }
 
-aside.curiosidades{
+aside#curiosidades{
     background-color: var(--branco-neve);
-    margin-top: 10px;
+    margin:10px 0px 0px 0px;
     border-radius: 10px
 }
-aside.curiosidades h2{
+aside#curiosidades h2 {
     background-image: linear-gradient(to top, var(--azul-profundo), var(--azul-gelo));
     padding:10px;
+    margin:auto;
     text-align: center;
     color: black;
-    text-shadow:1px 1px 1px rgba(255, 255, 255, 0.494)  ;
-    margin:auto;
+    text-shadow:1px 1px 1px rgba(255, 255, 255, 0.494) ;
     border-radius: 10px 10px 0px 0px;
 }
-.curiosidades:hover li{
+#curiosidades:hover li{
     background-color: black;
     color:var(--branco-neve);
     transition: background-color 0.3s ease ;
 }
-aside>ol {
+ul.pagina-himalaia:hover li{
+    background-color: black;
+    color:var(--branco-neve);
+    transition: background-color 0.3s ease ;
+}
+aside#curiosidades ol {
     list-style-position: inside;
     color: black;
     columns: 2 ;
