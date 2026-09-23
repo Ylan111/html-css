@@ -29,7 +29,7 @@ div.himalaia{
     background-size: cover;
     background-position: center;
     border-radius: 10px;
-    margin: 0 auto; /* centraliza */
+    margin: 0 auto; 
 }
 div.himalaia:hover{
     transform: scale(1.05);
@@ -55,16 +55,7 @@ body.pagina-himalaia{
     font-family: var(--principal);
     color: #1a1a2e;
 }
-header#pagina-principal{
-     padding: 10px;
-    font-size: 1em;
-    text-shadow: 1px 1px 0px rgba(255, 255, 255, 0.411);
-    min-height: normal;
-    text-align: center; 
-    background-image:linear-gradient(to left,transparent, rgba(0, 0, 0, 0.459), var(--azul-gelo));
-    color: black;
-    font-weight: bold;
-}
+
 main#pagina-himalaia{
     padding: 20px;
     margin: auto;
@@ -139,7 +130,16 @@ body.pagina-principal{
     #4682b4 100%     
 );
 }
-
+header#pagina-principal{
+     padding: 10px;
+    font-size: 1em;
+    text-shadow: 1px 1px 0px rgba(255, 255, 255, 0.411);
+    min-height: normal;
+    text-align: center; 
+    background-image:linear-gradient(to left,transparent, rgba(0, 0, 0, 0.459), var(--azul-gelo));
+    color: black;
+    font-weight: bold;
+}
 
 ul{
     list-style: none;
@@ -244,7 +244,7 @@ main.pagina-saara h2{
 
 }
 main.pagina-saara li {
-    background-color: white;
+    background-color: rgba(255, 255, 255, 0.686);
     color: black;
     font-weight: bold;
     border-radius: 15px;
@@ -255,6 +255,37 @@ main.pagina-saara li {
 }
 main.pagina-saara p{
     padding: 5px;
+}
+div#img1{
+    width: 100%;
+    max-width: 400px;
+    height: 400px; 
+    overflow: hidden;
+    transition: transform 0.4s ease;
+    background-image: url(../saara/img1.jpg);
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px;
+    margin: 0 auto; 
+}
+div#img1:hover{
+    transform: scale(1.05);
+}
+div#img2{
+    width: 100%;
+    max-width: 500px;
+    height: 200px;
+    overflow: hidden;
+    transition: transform 0.4s ease;
+    background-image: url(../saara/img2.jpg);
+    box-shadow: 0 2px 2px  rgba(0, 0, 0, 0.237);
+    background-size: cover;
+    background-position: center;
+    margin: 0 auto;
+    border-radius: 10px;
+}
+div#img2:hover{
+    transform: scale(1.05);
 }
 aside.saara {
     background-color: var(--dourado);
