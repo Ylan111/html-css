@@ -325,3 +325,18 @@ ol.pagina-saara:hover li {
  box-shadow: 0 5px 5px var(--areia-clara);
  transition: background-color 0.3s ease;
 }
+footer.pagina-saara p {
+    padding: 10px;
+    margin: 0;
+    background-image: linear-gradient(to left, var(--dourado), var(--terracota));
+    color: white;
+    box-shadow: black;
+    text-align: center;
+}
+footer.pagina-saara a {
+    text-decoration: none;
+    color: rgba(0, 0, 0, 0.998);
+}
+footer.pagina-saara a:hover{
+ color: #2c4870;
+}
