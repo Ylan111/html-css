@@ -198,6 +198,69 @@ main a#pagina-principal{
     box-shadow: 0 8px 20px rgba(0,0,0,0.3);
 }
 
+#q1>a{
+    text-decoration: none;
+    color: rgb(253, 251, 251);
+    font-variant: small-caps;
+    font-size: large;
+    font-family: Impact, 'Haettenschweiler', 'Arial Narrow Bold', sans-serif;
+
+}
+.q1{
+  display: flex;
+  justify-content: center;  /* centraliza na horizontal */
+  align-items: center;      /* centraliza na vertical */
+  width: 300px;
+  height: 300px;
+  text-decoration: none;
+}
+#q2>a{
+    text-decoration: none;
+    color: rgba(255, 204, 0, 0.66);
+    font-variant: small-caps;
+    font-size: large;
+    font-family: Impact, 'Haettenschweiler', 'Arial Narrow Bold', sans-serif;
+}
+.q2{
+  display: flex;
+  justify-content: center;  /* centraliza na horizontal */
+  align-items: center;      /* centraliza na vertical */
+  width: 300px;
+  height: 300px;
+  text-decoration: none;
+}
+#q3>a{
+    text-decoration: none;
+    color: rgb(51, 255, 0);
+    font-variant: small-caps;
+    font-size: large;
+    font-family: Impact, 'Haettenschweiler', 'Arial Narrow Bold', sans-serif;
+}
+.q3{
+  display: flex;
+  justify-content: center;  /* centraliza na horizontal */
+  align-items: center;      /* centraliza na vertical */
+  width: 300px;
+  height: 300px;
+  text-decoration: none;
+}
+#q4>a{
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    font-variant: small-caps;
+    font-size: large;
+    font-family: Impact, 'Haettenschweiler', 'Arial Narrow Bold', sans-serif;
+
+}
+.q4{
+  display: flex;
+  justify-content: center;  /* centraliza na horizontal */
+  align-items: center;      /* centraliza na vertical */
+  width: 300px;
+  height: 300px;
+  text-decoration: none;
+}
+
 #q1 {
 
     margin: 10px;
