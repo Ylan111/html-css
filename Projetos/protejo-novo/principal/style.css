@@ -4,141 +4,39 @@
 
 
 :root{
+
+    /*-------Himalaia-------*/
     --branco-neve: #f0f8ff;
     --azul-gelo: #a8d4e8; 
     --azul-profundo: #2c4870;
     --principal:"Playfair Display", serif;
+   
+    /*-------Saara-------*/
 
     --areia-clara: #f4d19c;
     --dourado:#ffb347;
     --laranja-queimado:#d2691e;
     --terracota:#8b4513;
+    
+    /*-------Amazônia-------*/
+
+    --Verde-neon: #39ff14;
+    --Verde-folha: #2d8659;
+    --Verde-musgo-escuro:#0f5132;
+    --Quase-preto: #001a0d;
+
+     /*-------Polo-------*/
+
+    --Branco-gelo: #ffffff;
+    --Azul-bebê:   #d4f1f9;
+    --Azul-céu-polar: #89cff0;
+    --Azul-aço-profundidade: #4682b4;
 }
+
 *{
     padding: 0;
     margin: 0;
 }
-/*--------Página Himalaia------------*/
-
-body.pagina-himalaia{
-    background: linear-gradient(to bottom,var(--branco-neve), var(--azul-gelo)) ;
-    font-family: var(--principal);
-    color: #1a1a2e;
-}
-
-header.pagina-himalaia{
-     padding: 10px;
-    font-size: 1em;
-    text-shadow: 1px 1px 0px rgba(255, 255, 255, 0.411);
-    min-height: normal;
-    text-align: center; 
-    background-image:linear-gradient(to left,transparent, rgba(0, 0, 0, 0.459), var(--azul-gelo));
-    color: black;
-    font-weight: bold;
-}
-
-div.himalaia{
-    width: 100%;
-    max-width: 400px;
-    height: 400px; 
-    overflow: hidden;
-    transition: transform 0.4s ease;
-    background-image: url(../himalaia/himalaia.jpeg);
-    background-size: cover;
-    background-position: center;
-    border-radius: 10px;
-    margin: 0 auto; 
-}
-div.himalaia:hover{
-    transform: scale(1.05);
-}
-div#himalaia{
-    width: 100%;
-    max-width: 500px;
-    height: 200px;
-    overflow: hidden;
-    transition: transform 0.4s ease;
-    background-image: url(../himalaia/image.png);
-    box-shadow: 0 2px 2px  rgba(0, 0, 0, 0.237);
-    background-size: cover;
-    background-position: center;
-    margin: 0 auto;
-    border-radius: 10px;
-}
-
-div#himalaia:hover{
-    transform: scale(1.05);
-}
-
-main#pagina-himalaia{
-    padding: 20px;
-    margin: auto;
-}
-main#pagina-himalaia h2{
-    text-shadow: 0 1px 1px black;
-    padding-left:6px ;
-    color: black;
-    margin: 10px;
-    border-radius: 10px;
-
-}
-main li {
-    background-color: white;
-    color: black;
-    font-weight: bold;
-    border-radius: 15px;
-    text-decoration: none;
-    padding: 15px 20px;
-    margin-bottom: 15px;
-    box-shadow: 0 4px 10px black;
-}
-
-
-main p{
-    padding: 5px;
-}
-ul.pagina-himalaia:hover li {
- background-color: black;
- color:var(--branco-neve);
- box-shadow: 0 5px 5px var(--azul-gelo);
- transition: background-color 0.3s ease;
-}
-
-aside#curiosidades{
-    background-color: var(--branco-neve);
-    margin:10px 0px 0px 0px;
-    border-radius: 10px
-}
-aside#curiosidades h2 {
-    background-image: linear-gradient(to top, var(--azul-profundo), var(--azul-gelo));
-    padding:10px;
-    margin:auto;
-    text-align: center;
-    color: black;
-    text-shadow:1px 1px 1px rgba(255, 255, 255, 0.494) ;
-    border-radius: 10px 10px 0px 0px;
-}
-#curiosidades:hover li{
-    background-color: black;
-    color:var(--branco-neve);
-    transition: background-color 0.3s ease ;
-}
-ul.pagina-himalaia:hover li{
-    background-color: black;
-    color:var(--branco-neve);
-    transition: background-color 0.3s ease ;
-}
-aside#curiosidades ol {
-    list-style-position: inside;
-    color: black;
-    columns: 2 ;
-    padding: 5px;
-    margin: 5px;
-}
-aside li{
-    padding:4px;
-}
-
 
     /*--------Página Principal----------*/
 
@@ -292,6 +190,127 @@ main a#pagina-principal{
     background-size: cover;
 }
 
+/*--------Página Himalaia------------*/
+
+body.pagina-himalaia{
+    background: linear-gradient(to bottom,var(--branco-neve), var(--azul-gelo)) ;
+    font-family: var(--principal);
+    color: #1a1a2e;
+}
+
+header.pagina-himalaia{
+     padding: 10px;
+    font-size: 1em;
+    text-shadow: 1px 1px 0px rgba(255, 255, 255, 0.411);
+    min-height: normal;
+    text-align: center; 
+    background-image:linear-gradient(to left,transparent, rgba(0, 0, 0, 0.459), var(--azul-gelo));
+    color: black;
+    font-weight: bold;
+}
+
+div.himalaia{
+    width: 100%;
+    max-width: 400px;
+    height: 400px; 
+    overflow: hidden;
+    transition: transform 0.4s ease;
+    background-image: url(../himalaia/himalaia.jpeg);
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px;
+    margin: 0 auto; 
+}
+div.himalaia:hover{
+    transform: scale(1.05);
+}
+div#himalaia{
+    width: 100%;
+    max-width: 500px;
+    height: 200px;
+    overflow: hidden;
+    transition: transform 0.4s ease;
+    background-image: url(../himalaia/image.png);
+    box-shadow: 0 2px 2px  rgba(0, 0, 0, 0.237);
+    background-size: cover;
+    background-position: center;
+    margin: 0 auto;
+    border-radius: 10px;
+}
+
+div#himalaia:hover{
+    transform: scale(1.05);
+}
+
+main#pagina-himalaia{
+    padding: 20px;
+    margin: auto;
+}
+main#pagina-himalaia h2{
+    text-shadow: 0 1px 1px black;
+    padding-left:6px ;
+    color: black;
+    margin: 10px;
+    border-radius: 10px;
+
+}
+main li {
+    background-color: white;
+    color: black;
+    font-weight: bold;
+    border-radius: 15px;
+    text-decoration: none;
+    padding: 15px 20px;
+    margin-bottom: 15px;
+    box-shadow: 0 4px 10px black;
+}
+
+
+main p{
+    padding: 5px;
+}
+ul.pagina-himalaia:hover li {
+ background-color: black;
+ color:var(--branco-neve);
+ box-shadow: 0 5px 5px var(--azul-gelo);
+ transition: background-color 0.3s ease;
+}
+
+aside#curiosidades{
+    background-color: var(--branco-neve);
+    margin:10px 0px 0px 0px;
+    border-radius: 10px
+}
+aside#curiosidades h2 {
+    background-image: linear-gradient(to top, var(--azul-profundo), var(--azul-gelo));
+    padding:10px;
+    margin:auto;
+    text-align: center;
+    color: black;
+    text-shadow:1px 1px 1px rgba(255, 255, 255, 0.494) ;
+    border-radius: 10px 10px 0px 0px;
+}
+#curiosidades:hover li{
+    background-color: black;
+    color:var(--branco-neve);
+    transition: background-color 0.3s ease ;
+}
+ul.pagina-himalaia:hover li{
+    background-color: black;
+    color:var(--branco-neve);
+    transition: background-color 0.3s ease ;
+}
+aside#curiosidades ol {
+    list-style-position: inside;
+    color: black;
+    columns: 2 ;
+    padding: 5px;
+    margin: 5px;
+}
+aside li{
+    padding:4px;
+}
+
 /*--------Página Saara----------*/
 
 body.pagina-saara{
@@ -422,3 +441,4 @@ footer.pagina-saara a {
 footer.pagina-saara a:hover{
  color: #2c4870;
 }
+/*--------Página Amazônia----------*/
