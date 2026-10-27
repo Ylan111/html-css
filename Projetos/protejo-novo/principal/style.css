@@ -254,7 +254,7 @@ main#pagina-himalaia h2{
     border-radius: 10px;
 
 }
-main li {
+main.pagina-himalaia li {
     background-color: white;
     color: black;
     font-weight: bold;
@@ -442,4 +442,3 @@ footer.pagina-saara a:hover{
  color: #2c4870;
 }
 /*--------Página Amazônia----------*/
-
